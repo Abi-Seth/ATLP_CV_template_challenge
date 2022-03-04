@@ -1,0 +1,338 @@
+/* importing fonts  */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+/* style variables */
+:root {
+    /* fonts */
+    --poppins: 'Poppins', sans-serif;
+
+    /* colors */
+    --pure-white: #ffffff;
+    --side-color: #013a6b;
+    --dim-blur-color: #e1e0e1;
+    --main-dark-color: #3c3d3c;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-color);
+    scroll-behavior: smooth;
+    width: 100%;
+    overflow-x: hidden;
+    font-family: var(--poppins);
+}
+
+#main_container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#main_container .resume_container {
+    width: 69%;
+    height: auto;
+    border: 0.03em solid var(--dim-blur-color);
+    border-radius: 0.5em;
+    display: flex;
+    flex-wrap: nowrap;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    overflow: hidden;
+}
+
+.resume_container .resume_side_container {
+    width: 21%;
+    height: auto;
+    background: var(--side-color)
+}
+
+.resume_container .resume_main_content_container {
+    width: 75%;
+    height: auto;
+    background: var(--pure-white);
+}
+
+.resume_main_content_container .main_personal_description {
+    width: 100%;
+    height: 42vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 2%;
+    margin-top: 1em;
+}
+
+.main_personal_description>h1,
+.main_personal_description>h3 {
+    color: var(--side-color);
+    margin-bottom: 0.2em;
+}
+
+.main_personal_description>h1 {
+    font-size: 2.2em;
+}
+
+.main_personal_description>h3 {
+    font-size: 1.2em;
+    font-weight: 400;
+}
+
+.personal_contacts {
+    width: 100%;
+    height: auto;
+    margin: 0.9em 0 1.3em 0;
+}
+
+.personal_contacts .row {
+    width: 100%;
+    height: 5vh;
+    display: flex;
+    align-items: center;
+}
+
+.personal_contacts .row .item {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.personal_contacts .row .item .icon_container {
+    margin-right: 0.3em;
+    width: 1.5em;
+    height: 1.5em;
+    border-radius: 50%;
+    background: var(--side-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.personal_contacts .row .item p {
+    font-size: 0.82em;
+    opacity: 0.7;
+}
+
+.main_personal_description .personal_description p {
+    font-size: 0.8em;
+    opacity: 0.6;
+    line-height: 1.8em;
+}
+
+.personal_experience {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: nowrap;
+    margin-top: 2em;
+}
+
+.personal_experience .time_line_container {
+    width: 10%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.time_line_container .line {
+    width: 0.15em;
+    height: 160vh;
+    background: var(--dim-blur-color);
+}
+
+.time_line_container .icon_dot {
+    width: 2.3em;
+    height: 2.3em;
+    background: var(--side-color);
+    border-radius: 50%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.time_line_container .dot {
+    width: 0.6em;
+    height: 0.6em;
+    background: var(--side-color);
+    border-radius: 50%;
+    position: absolute;
+}
+
+.dot_one { top: 0; }
+.dot_two { top: 58.2vh; }
+.dot_three { top: 85.5vh; }
+.dot_four { top: 113.6vh; }
+.dot_five { top: 138.9vh; }
+
+/* .dot_two { top: 20vh; } */
+
+.dot_1 { top: 8.5vh; }
+.para_1 { top: 8.5vh;}
+.dot_2 { top: 33.8vh; }
+.para_2 { top: 33.8vh; }
+.dot_3 { top: 66.8vh; }
+.para_3 { top: 66.8vh; }
+.dot_4 { top: 93.8vh; }
+.dot_5 { top: 98.4vh; }
+.dot_6 { top: 103.1vh; }
+.dot_7 { top: 107.8vh; }
+.dot_8 { top: 121.8vh; }
+.dot_9 { top: 130.2vh; }
+.dot_10 { top: 147.2vh; }
+.para_4 { top: 147.2vh; }
+.dot_11 { top: 152.8vh; }
+.para_5 { top: 152.8vh; }
+
+
+
+.new_exper {
+    margin-top: 2.5vh;
+}
+
+.display_column {
+    flex-direction: column;
+    margin-left: 0 !important;
+    margin-top: 0.7em;
+}
+
+.personal_experience .time_line_content {
+    width: 90%;
+    height: auto;
+}
+
+.time_line_content .experience {
+    width: 100%;
+    height: auto;
+}
+
+.experience .title, .experience .sub_title {
+    display: flex;
+    align-items: center;
+    height: 2.3em;
+} 
+
+.experience .sub_title {
+    height: 3.5em !important;
+}
+
+.experience .title h4 {
+    font-size: 1.3em;
+    opacity: 0.9;
+    color: var(--side-color);
+}
+
+.experience .sub_title h6 {
+    font-size: 1em;
+    color: var(--main-dark-color);
+    opacity: 0.9;
+}
+
+.sub_title_two {
+    font-size: 0.8em;
+    opacity: 0.7;
+    font-style: italic;
+}
+
+.experience .list_view {
+    padding: 1% 0 1% 3%;
+}
+
+.experience ul li {
+    font-size: 0.78em;
+    opacity: 0.65;
+    line-height: 1.8em;
+}
+
+.display_column p {
+    font-size: 0.78em;
+    opacity: 0.68;
+    line-height: 2.6em;
+    font-weight: 400;
+}
+
+.display_column .expanded_item {
+    width: 100%;
+    height: auto;
+    display: flex;
+    margin-bottom: 0.3em;
+}
+
+.expanded_item .statement {
+    width: 60%;
+    height: auto;
+}
+
+.expanded_item .level {
+    width: 40%;
+    padding: 1%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.level_dots {
+    display: flex;
+}
+
+.level_dots .level_dot {
+    width: 0.7em;
+    height: 0.7em;
+    margin-left: 0.3em;
+    border-radius: 50%;
+    background: var(--side-color);
+}
+
+.level .not_shaded {
+    background: var(--dim-blur-color) !important;
+}
+
+.level p {
+    font-size: 0.74em !important;
+    opacity: 0.6;
+}
+
+.resume_side_container {
+    position: relative;
+}
+
+.resume_side_container .left_time_line {
+    width: 100%;
+    height: 160.8vh;
+    position: absolute;
+    bottom: 0;
+}
+
+.left_time_line .times {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-right: 1em;
+}
+
+.times .para_1,
+.times .para_2,
+.times .para_3,
+.times .para_4,
+.times .para_5 {
+    position: absolute;
+    font-size: 0.81em;
+    opacity: 0.8;
+    color: var(--pure-white);
+}
+
+#name {
+    user-select: none;
+    cursor: pointer;
+}
